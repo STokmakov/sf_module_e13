@@ -16,7 +16,7 @@ module.exports = {
     hot: true,
     port: 8082
   },
-
+  
   plugins: [
     new CleanWebpackPlugin(),
     // "hot: true" automatically applies HMR plugin, you don't have to add it manually to your webpack configuration.
