@@ -7,7 +7,9 @@
     "dev": "webpack --config webpack.dev.js",
     "prod": "webpack --mode production --config webpack.prod.js",
     "js-serv": "json-server  --watch data.json",
-    "start": "webpack-dev-server --config webpack.dev.js "
+    "start": "webpack-dev-server --config webpack.dev.js ",
+    "lint": "eslint --debug src/",
+    "lint:write": "eslint --debug src/ --fix"
   },
   "repository": {
     "type": "git",
