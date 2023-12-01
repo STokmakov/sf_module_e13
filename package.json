@@ -9,7 +9,8 @@
     "js-serv": "json-server  --watch data.json",
     "start": "webpack-dev-server --config webpack.dev.js ",
     "lint": "eslint --debug src/",
-    "lint:write": "eslint --debug src/ --fix"
+    "lint:write": "eslint --debug src/ --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,10 @@
     }
   },
   "lint-staged": {
-    "*.(js|jsx)": ["npm run lint:write", "git add"]
+    "*.(js|jsx)": [
+      "npm run lint:write",
+      "git add"
+    ]
   },
   "author": "s.tokmakov",
   "license": "ISC",
