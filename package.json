@@ -20,7 +20,6 @@
   },
   "lint-staged": {
     "*.(js|jsx)": ["npm run lint:write", "git add"]
-  },
   "author": "s.tokmakov",
   "license": "ISC",
   "bugs": {
